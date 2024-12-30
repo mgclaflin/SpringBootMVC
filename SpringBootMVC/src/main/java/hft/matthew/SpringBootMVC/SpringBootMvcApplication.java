@@ -1,4 +1,4 @@
-package hft.matthew.SpringBootMVC;
+/*package hft.matthew.SpringBootMVC;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,4 +10,17 @@ public class SpringBootMvcApplication {
 		SpringApplication.run(SpringBootMvcApplication.class, args);
 	}
 
+}
+*/
+
+
+package hft.matthew.SpringBootMVC;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootMvcApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootMvcApplication.class, args);
+    }
 }
