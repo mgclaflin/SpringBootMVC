@@ -1,6 +1,7 @@
 package hft.matthew.SpringBootMVC;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -18,16 +19,15 @@ public class HomeController {
 	}
 	
 	@RequestMapping("add")
-	public ModelAndView add(@RequestParam("num1")int i,@RequestParam("num2") int j) {
-		
-		ModelAndView mv = new ModelAndView("result");
+	public String add(@RequestParam("num1")int i,@RequestParam("num2") int j, Model m) {
+	
+		//can use model or ModelAndView or ModelMap
 		
 		int num3 = i+j;
-		
-		mv.addObject("num3", num3);
+		m.addAttribute("num3", num3);
 
 		
-		return mv;
+		return "result";
 	}
 	
 
