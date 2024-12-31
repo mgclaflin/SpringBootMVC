@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Welcome Page</title>
+    <title>Programmer Details</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,11 +19,8 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to My JSP Result Page!</h1>
-	<p>Programmer Details:</p>
-	<p>ID: ${p1.id}</p>
-	<p>Name: ${p1.name}</p>
-	<p>Welcome back, ${p1.name}!</p>
-	
+    <h1>Programmer Details</h1>
+    <p>ID: ${result.id}</p>
+    <p>Name: ${result.name}</p>
 </body>
 </html>

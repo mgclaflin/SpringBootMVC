@@ -23,10 +23,16 @@
     <p>This is a basic JSP example page.</p>
     <p>The current date and time is: <%= new java.util.Date() %></p>
 	
-	<form action="addProgrammer">
+	<form action="addProgrammer" method="post">
 		Enter your id: <input type="text" name="id"><br>
 		Enter name: <input type="text" name="name"><br>
 		<input type="submit">
 	</form>
+	<hr>
+	<form action="getProgrammer" method="get">
+		Enter your id: <input type="text" name="id"><br>
+		<input type="submit">
+	</form>
+	<a href="getProgrammers">View All Programmers</a>
 </body>
 </html>
