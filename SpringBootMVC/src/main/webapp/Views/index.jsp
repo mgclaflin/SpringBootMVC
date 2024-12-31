@@ -23,9 +23,9 @@
     <p>This is a basic JSP example page.</p>
     <p>The current date and time is: <%= new java.util.Date() %></p>
 	
-	<form action="add">
-		Enter 1st number : <input type="text" name="num1"><br>
-		Enter 2nd number : <input type="text" name="num2"><br>
+	<form action="addProgrammer">
+		Enter your id: <input type="text" name="id"><br>
+		Enter name: <input type="text" name="name"><br>
 		<input type="submit">
 	</form>
 </body>

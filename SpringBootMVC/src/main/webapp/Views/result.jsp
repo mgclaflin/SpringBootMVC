@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>Welcome to My JSP Result Page!</h1>
-	Result is: ${num3}
+	Result is: ${programmer}
 	
 </body>
 </html>
