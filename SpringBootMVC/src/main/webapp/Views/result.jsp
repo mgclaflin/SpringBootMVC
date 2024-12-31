@@ -20,7 +20,9 @@
 </head>
 <body>
     <h1>Welcome to My JSP Result Page!</h1>
-	Result is: ${programmer}
+	Result is: ${p1}
+	
+	Welcome back ${name}
 	
 </body>
 </html>

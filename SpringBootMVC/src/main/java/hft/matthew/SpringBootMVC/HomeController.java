@@ -34,11 +34,17 @@ public class HomeController {
 	}
 	
 	@RequestMapping("addProgrammer")
-	public String addProgrammer(@ModelAttribute Programmer p) {
+	public String addProgrammer(@ModelAttribute("p1") Programmer p) {
 		//updated to use ModelAttribute that helps minimize code
 		//this initializes the object instance and automatically adds it to the model as well
 
 		return "result";
+	}
+	
+	//using ModelAttribute on the method level
+	@ModelAttribute
+	public void modelDate(Model m) {
+		m.addAttribute("name","Programmers");
 	}
 	
 
