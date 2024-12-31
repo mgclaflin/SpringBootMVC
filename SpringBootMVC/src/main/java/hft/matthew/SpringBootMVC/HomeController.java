@@ -2,6 +2,7 @@ package hft.matthew.SpringBootMVC;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -33,14 +34,10 @@ public class HomeController {
 	}
 	
 	@RequestMapping("addProgrammer")
-	public String addProgrammer(@RequestParam("id")int id,@RequestParam("name") String name, Model m) {
-	
-		Programmer p = new Programmer();
-		p.setId(id);
-		p.setName(name);
-		
-		m.addAttribute("programmer",p);
-		
+	public String addProgrammer(@ModelAttribute Programmer p) {
+		//updated to use ModelAttribute that helps minimize code
+		//this initializes the object instance and automatically adds it to the model as well
+
 		return "result";
 	}
 	
